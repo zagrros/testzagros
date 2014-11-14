@@ -1,0 +1,663 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>mainPage</title>
+	<link rel="stylesheet" href="themes/Rich2.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/desktop.css" media="(min-width:768px)">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		
+	<script>
+	$(document).bind('mobileinit',function(){
+   $.mobile.selectmenu.prototype.options.nativeMenu = false;
+});
+	</script>
+	
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+$('.input-tooltip').hide();
+$( "#income" ).focus(function() {
+  
+  $('.input-tooltip').show();
+});//]]> 
+$( "#income" ).focusout(function() {
+    $('.input-tooltip').hide();
+});//]]> 
+});
+ 
+</script>
+        <script src="js/config.js"></script>        
+        <script data-main="http://cdn.globalrichlist.com/s/1406819546/js/build/app" src="http://cdn.globalrichlist.com/s/1406819546/js/lib/require/require.js"></script>
+        
+        <script src="http://cdn.globalrichlist.com/s/1406819546/js/config.js"></script>
+
+     
+		
+		<script>
+		 var map =
+    [
+    "&\#1632;","&\#1633;","&\#1634;","&\#1635;","&\#1636;",
+    "&\#1637;","&\#1638;","&\#1639;","&\#1640;","&\#1641;"
+    ];
+
+    function getArabicNumbers(str)
+    {
+        var newStr = "";
+
+        str = String(str);
+
+        for(i=0; i<str.length; i++)
+        {
+            newStr += map[parseInt(str.charAt(i))];
+        }
+
+        return newStr;
+    }
+	</script>
+
+
+</head>
+<body>
+	<div data-role="page" data-theme="a" id="mainpage">
+	<div data-role="panel" id="panelpage1" data-theme="a">
+    <!-- panel content goes here -->
+	<div class="panel-content">
+      <div ><img src="img/logo3.png" style="width:100%;"/></div>
+      <ul data-role="listview">
+      <li><a href="#mainpage">mohasebegar</a></li>
+    <li><a href="#introduction">darbareye barname</a></li>
+    <li><a href="http://video-js.zencoder.com/oceans-clip.mp4">Video</a></li>
+</ul>
+    </div><!-- /content wrapper for padding -->
+</div><!-- /panel -->
+		<div data-role="header" data-position="fixed" data-theme="a">
+		
+		<a href="#panelpage1" data-role="button" data-inline="true" data-icon="bars">Menu</a>
+	<h1>Rishness</h1>
+	
+
+		</div>
+	
+		<div data-role="content" data-theme="a">
+			
+		
+		<div id="homeView" class="main-container income">
+            <div data-view="FormPanelView" id="panel-0" class="panel header-container">
+                <header class="header clearfix">
+                    <div class="wrapper">
+					
+                        <div class="header-inner">
+                          
+
+                            
+                            
+    <form>
+        <div class="input-group">
+            <label for="country_code">Select location:</label>
+            <select name="country_code" id="country_code">
+                <option value="IRN">Iran, Islamic Rep. (Rial)</option>
+                
+                <optgroup>
+                    
+                    <option value="GBR">UK (Pound)</option>
+                    
+                    <option value="DE">Germany (Euro)</option>
+                    
+                    <option value="FR">France (Euro)</option>
+                    
+                    <option value="AUS">Australia (Dollar)</option>
+                    
+                    <option value="USA">USA (Dollar)</option>
+                    
+                    <option value="IT">Italy (Euro)</option>
+                    
+                    <option value="IE">Ireland (Euro)</option>
+                    
+                    <option value="ABW">Aruba (Guilder)</option>
+                    
+                    <option value="ADO">Andorra (Euro)</option>
+                    
+                    <option value="AGO">Angola (Angolan kwanza)</option>
+                    
+                    <option value="ALB">Albania (Lek)</option>
+                    
+                    <option value="ARE">United Arab Emirates (United Arab Emirates dirham)</option>
+                    
+                    <option value="ARG">Argentina (Peso)</option>
+                    
+                    <option value="ARM">Armenia (Armenian dram)</option>
+                    
+                    <option value="ATG">Antigua and Barbuda (East Caribbean dollar)</option>
+                    
+                    <option value="AUT">Austria (Euro)</option>
+                    
+                    <option value="BDI">Burundi (Burundian franc)</option>
+                    
+                    <option value="BEL">Belgium (Euro)</option>
+                    
+                    <option value="BEN">Benin (West African CFA franc)</option>
+                    
+                    <option value="BFA">Burkina Faso (West African CFA franc)</option>
+                    
+                    <option value="BGR">Bulgaria (Lev)</option>
+                    
+                    <option value="BHR">Bahrain (Bahraini dinar)</option>
+                    
+                    <option value="BHS">Bahamas, The (Dollar)</option>
+                    
+                    <option value="BIH">Bosnia and Herzegovina (Convertible Mark)</option>
+                    
+                    <option value="BLR">Belarus (Ruble)</option>
+                    
+                    <option value="BLZ">Belize (Dollar)</option>
+                    
+                    <option value="BMU">Bermuda (Dollar)</option>
+                    
+                    <option value="BOL">Bolivia (Boliviano)</option>
+                    
+                    <option value="BRB">Barbados (Dollar)</option>
+                    
+                    <option value="BRN">Brunei Darussalam (Dollar)</option>
+                    
+                    <option value="BTN">Bhutan (Bhutanese ngultrum)</option>
+                    
+                    <option value="BWA">Botswana (Pula)</option>
+                    
+                    <option value="CAF">Central African Republic (Central African CFA franc)</option>
+                    
+                    <option value="CAN">Canada (Dollar)</option>
+                    
+                    <option value="CHE">Switzerland (Franc)</option>
+                    
+                    <option value="CHL">Chile (Peso)</option>
+                    
+                    <option value="CHN">China (Yuan Renminbi)</option>
+                    
+                    <option value="CIV">Côte d&#39;Ivoire (West African CFA franc)</option>
+                    
+                    <option value="CMR">Cameroon (Central African CFA franc)</option>
+                    
+                    <option value="COG">Congo, Republic of the (Central African CFA franc)</option>
+                    
+                    <option value="COL">Colombia (Peso)</option>
+                    
+                    <option value="COM">Comoros (Comorian franc)</option>
+                    
+                    <option value="CPV">Cape Verde (Cape Verdean escudo)</option>
+                    
+                    <option value="CRI">Costa Rica (Colon)</option>
+                    
+                    <option value="CUB">Cuba (Peso)</option>
+                    
+                    <option value="CUW">Curaçao (Netherlands Antillean guilder)</option>
+                    
+                    <option value="CYM">Cayman Islands (Dollar)</option>
+                    
+                    <option value="CYP">Cyprus (Euro)</option>
+                    
+                    <option value="CZE">Czech Republic (Koruna)</option>
+                    
+                    <option value="DEU">Germany (Euro)</option>
+                    
+                    <option value="DJI">Djibouti (Djiboutian franc)</option>
+                    
+                    <option value="DMA">Dominica (East Caribbean dollar)</option>
+                    
+                    <option value="DNK">Denmark (Krone)</option>
+                    
+                    <option value="DOM">Dominican Republic (Peso)</option>
+                    
+                    <option value="DZA">Algeria (Algerian dinar)</option>
+                    
+                    <option value="ECU">Ecuador (United States dollar)</option>
+                    
+                    <option value="EGY">Egypt, Arab Rep. (Pound)</option>
+                    
+                    <option value="ERI">Eritrea (Eritrean nakfa)</option>
+                    
+                    <option value="ESP">Spain (Euro)</option>
+                    
+                    <option value="EST">Estonia (Euro)</option>
+                    
+                    <option value="ETH">Ethiopia (Ethiopian birr)</option>
+                    
+                    <option value="FIN">Finland (Euro)</option>
+                    
+                    <option value="FJI">Fiji (Dollar)</option>
+                    
+                    <option value="FRA">France (Euro)</option>
+                    
+                    <option value="FRO">Faroe Islands (Danish krone)</option>
+                    
+                    <option value="FSM">Micronesia (United States dollar)</option>
+                    
+                    <option value="GAB">Gabon (Central African CFA franc)</option>
+                    
+                    <option value="GEO">Georgia (Georgian lari)</option>
+                    
+                    <option value="GIN">Guinea (Guinean franc)</option>
+                    
+                    <option value="GMB">Gambia, The (Gambian dalasi)</option>
+                    
+                    <option value="GNB">Guinea-Bissau (West African CFA franc)</option>
+                    
+                    <option value="GNQ">Equatorial Guinea (Central African CFA franc)</option>
+                    
+                    <option value="GRC">Greece (Euro)</option>
+                    
+                    <option value="GRD">Grenada (East Caribbean dollar)</option>
+                    
+                    <option value="GTM">Guatemala (Quetzal)</option>
+                    
+                    <option value="GUY">Guyana (Dollar)</option>
+                    
+                    <option value="HKG">Hong Kong SAR, China (Dollar)</option>
+                    
+                    <option value="HND">Honduras (Lempira)</option>
+                    
+                    <option value="HRV">Croatia (Kuna)</option>
+                    
+                    <option value="HTI">Haiti (Haitian gourde)</option>
+                    
+                    <option value="HUN">Hungary (Forint)</option>
+                    
+                    <option value="IMY">Isle of Man (Pound)</option>
+                    
+                    <option value="IND">India (Rupee)</option>
+                    
+                    <option value="IRL">Ireland (Euro)</option>
+                    
+                    <option value="IRN">Iran, Islamic Rep. (Rial)</option>
+                    
+                    <option value="IRQ">Iraq (Iraqi dinar)</option>
+                    
+                    <option value="ISL">Iceland (Krona)</option>
+                    
+                    <option value="ISR">Israel (Shekel)</option>
+                    
+                    <option value="ITA">Italy (Euro)</option>
+                    
+                    <option value="JAM">Jamaica (Dollar)</option>
+                    
+                    <option value="JOR">Jordan (Jordanian dinar)</option>
+                    
+                    <option value="JPN">Japan (Yen)</option>
+                    
+                    <option value="KEN">Kenya (Kenyan shilling)</option>
+                    
+                    <option value="KHM">Cambodia (Riel)</option>
+                    
+                    <option value="KIR">Kiribati (Australian dollar)</option>
+                    
+                    <option value="KNA">Saint Kitts and Nevis (East Caribbean dollar)</option>
+                    
+                    <option value="KOR">Korea, Rep. (Won)</option>
+                    
+                    <option value="KSV">Kosovo (Euro)</option>
+                    
+                    <option value="KWT">Kuwait (Kuwaiti dinar)</option>
+                    
+                    <option value="LAO">Lao PDR (Kip)</option>
+                    
+                    <option value="LBN">Lebanon (Pound)</option>
+                    
+                    <option value="LBY">Libya (Libyan dinar)</option>
+                    
+                    <option value="LCA">Saint Lucia (East Caribbean dollar)</option>
+                    
+                    <option value="LIE">Liechtenstein (Swiss franc)</option>
+                    
+                    <option value="LKA">Sri Lanka (Rupee)</option>
+                    
+                    <option value="LSO">Lesotho (Lesotho loti)</option>
+                    
+                    <option value="LTU">Lithuania (Litas)</option>
+                    
+                    <option value="LUX">Luxembourg (Euro)</option>
+                    
+                    <option value="LVA">Latvia (Lat)</option>
+                    
+                    <option value="MAC">Macau (Macanese pataca)</option>
+                    
+                    <option value="MAR">Morocco (Moroccan dirham)</option>
+                    
+                    <option value="MCO">Monaco (Euro)</option>
+                    
+                    <option value="MDA">Moldova (Moldovan leu)</option>
+                    
+                    <option value="MDG">Madagascar (Malagasy ariary)</option>
+                    
+                    <option value="MDV">Maldives (Maldivian rufiyaa)</option>
+                    
+                    <option value="MEX">Mexico (Peso)</option>
+                    
+                    <option value="MHL">Marshall Islands (United States dollar)</option>
+                    
+                    <option value="MKD">Macedonia, FYR (Denar)</option>
+                    
+                    <option value="MLI">Mali (West African CFA franc)</option>
+                    
+                    <option value="MLT">Malta (Euro)</option>
+                    
+                    <option value="MNE">Montenegro (Euro)</option>
+                    
+                    <option value="MNG">Mongolia (Tughrik)</option>
+                    
+                    <option value="MOZ">Mozambique (Metical)</option>
+                    
+                    <option value="MRT">Mauritania (Mauritanian ouguiya)</option>
+                    
+                    <option value="MUS">Mauritius (Rupee)</option>
+                    
+                    <option value="MWI">Malawi (Malawian kwacha)</option>
+                    
+                    <option value="MYS">Malaysia (Ringgit)</option>
+                    
+                    <option value="NAM">Namibia (Dollar)</option>
+                    
+                    <option value="NCL">New Caledonia (CFP franc)</option>
+                    
+                    <option value="NER">Niger (West African CFA franc)</option>
+                    
+                    <option value="NGA">Nigeria (Naira)</option>
+                    
+                    <option value="NIC">Nicaragua (Cordoba)</option>
+                    
+                    <option value="NLD">Netherlands (Euro)</option>
+                    
+                    <option value="NOR">Norway (Krone)</option>
+                    
+                    <option value="NPL">Nepal (Rupee)</option>
+                    
+                    <option value="NZL">New Zealand (Dollar)</option>
+                    
+                    <option value="OMN">Oman (Rial)</option>
+                    
+                    <option value="PAK">Pakistan (Rupee)</option>
+                    
+                    <option value="PAN">Panama (Balboa)</option>
+                    
+                    <option value="PER">Peru (Sol)</option>
+                    
+                    <option value="PHL">Philippines (Peso)</option>
+                    
+                    <option value="PNG">Papua New Guinea (Papua New Guinean kina)</option>
+                    
+                    <option value="POL">Poland (Zloty)</option>
+                    
+                    <option value="PRI">Puerto Rico (United States dollar)</option>
+                    
+                    <option value="PRK">Korea, Dem. Rep. (Won)</option>
+                    
+                    <option value="PRT">Portugal (Euro)</option>
+                    
+                    <option value="PRY">Paraguay (Guarani)</option>
+                    
+                    <option value="PYF">French Polynesia (CFP franc)</option>
+                    
+                    <option value="QAT">Qatar (Riyal)</option>
+                    
+                    <option value="ROM">Romania (New Leu)</option>
+                    
+                    <option value="RUS">Russian Federation (Ruble)</option>
+                    
+                    <option value="RWA">Rwanda (Rwandan franc)</option>
+                    
+                    <option value="SAU">Saudi Arabia (Riyal)</option>
+                    
+                    <option value="SDN">Sudan (Sudanese pound)</option>
+                    
+                    <option value="SEN">Senegal (West African CFA franc)</option>
+                    
+                    <option value="SGP">Singapore (Dollar)</option>
+                    
+                    <option value="SLB">Solomon Islands (Dollar)</option>
+                    
+                    <option value="SLE">Sierra Leone (Sierra Leonean leone)</option>
+                    
+                    <option value="SLV">El Salvador (Colon)</option>
+                    
+                    <option value="SMR">San Marino (Euro)</option>
+                    
+                    <option value="SOM">Somalia (Shilling)</option>
+                    
+                    <option value="SRB">Serbia (Dinar)</option>
+                    
+                    <option value="SUR">Suriname (Dollar)</option>
+                    
+                    <option value="SVK">Slovak Republic (Euro)</option>
+                    
+                    <option value="SVN">Slovenia (Euro)</option>
+                    
+                    <option value="SWE">Sweden (Krona)</option>
+                    
+                    <option value="SWZ">Swaziland (Swazi lilangeni)</option>
+                    
+                    <option value="SXM">Sint Maarten (Netherlands Antillean guilder)</option>
+                    
+                    <option value="SYC">Seychelles (Rupee)</option>
+                    
+                    <option value="SYR">Syrian Arab Republic (Pound)</option>
+                    
+                    <option value="TCA">Turks and Caicos Islands (United States dollar)</option>
+                    
+                    <option value="TCD">Chad (Central African CFA franc)</option>
+                    
+                    <option value="TGO">Togo (West African CFA franc)</option>
+                    
+                    <option value="THA">Thailand (Baht)</option>
+                    
+                    <option value="TJK">Tajikistan (New Dollar)</option>
+                    
+                    <option value="TKM">Turkmenistan (Turkmenistan manat)</option>
+                    
+                    <option value="TMP">East Timor (United States dollar)</option>
+                    
+                    <option value="TON">Tonga (Tongan pa&#39;anga)</option>
+                    
+                    <option value="TTO">Trinidad and Tobago (Dollar)</option>
+                    
+                    <option value="TUN">Tunisia (Tunisian dinar)</option>
+                    
+                    <option value="TUR">Turkey (Lira)</option>
+                    
+                    <option value="TZA">Tanzania (Tanzanian shilling)</option>
+                    
+                    <option value="UGA">Uganda (Ugandan shilling)</option>
+                    
+                    <option value="UKR">Ukraine (Hryvna)</option>
+                    
+                    <option value="URY">Uruguay (Peso)</option>
+                    
+                    <option value="UZB">Uzbekistan (Som)</option>
+                    
+                    <option value="VCT">Saint Vincent and the Grenadines (East Caribbean dollar)</option>
+                    
+                    <option value="VEN">Venezuela, RB (Bolivar)</option>
+                    
+                    <option value="VNM">Vietnam (Dong)</option>
+                    
+                    <option value="WBG">West Bank and Gaza (Israeli new shekel)</option>
+                    
+                    <option value="WSM">Samoa (Samoan tala)</option>
+                    
+                    <option value="YEM">Yemen, Rep. (Rial)</option>
+                    
+                    <option value="ZAF">South Africa (Rand)</option>
+                    
+                    <option value="ZAR">Congo, Democratic Republic of the (Congolese franc)</option>
+                    
+                    <option value="BRA">Brazil (Real)</option>
+                    
+                </optgroup>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="income">Enter annual net income:</label>
+            <input type="text" id="income" name="income" min="10" pattern="[0-9]*">
+            <div class="input-tooltip">
+                <span class="arrow"></span>
+                <p>To get the most accurate placing possible, please include your net annual salary, plus any other money that you receive each year: benefits, pensions, even your student loan.</p>
+            </div>
+        </div>
+        <input type="submit" value="Submit Button" class="visually-hidden" />
+    </form>
+
+	
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+            
+    <section data-view="PeoplePanelView" id="panel-1" class=" panel panel-1 people-panel">
+        <div class="wrapper">
+            <div class="panel-inner">
+                <canvas id="canvas-people" width="600" height="500"></canvas>
+                <div class="box box1">
+                    <p>You’re in <strong>the top</strong> <strong class="num"><span class="counter num-percent"></span>%</strong> <strong>richest</strong> people in the world by income.</p>
+                </div>
+                <div class="box box2">
+                    <p>That makes <strong>you</strong> the <strong class="num"><span class="counter num-position"></span><span class="suffix"></span></strong> <strong>richest</strong>  person on earth by income.</p>
+                </div>
+                <a class="next" href="#na">Keep scrolling</a>
+            </div>
+        </div>
+    </section>
+    <section data-view="Donate1PanelView" id="panel-2" class=" panel panel-2 comparison-panel">
+        <div class="wrapper">
+            <div class="panel-inner">
+                <div class="box replace">
+                    <p class="user-income-p">In <strong>1 hour</strong> you make <strong class="num"><span class="lcu"></span><span class="counter"></span></strong></p>
+                    <p>Meanwhile, the average labourer in <strong><span class="txt-counterpart-location"></span></strong> makes just <strong><span class="lcu"></span><span class="txt-counterpart-income-hourly"></span></strong> in the same time.</p>
+                    <p>It takes just a minute to do something to help though. Simply click the button and donate an hour’s pay, or whatever you can afford, to our chosen charity.</p>
+                    <p class="conversion">Your donation will be converted into GBP sterling at the next stage.</p>
+                    
+                    <div class="charity-container">
+                        <img src="http://cdn.globalrichlist.com/m/logos/care-international.png" alt="CARE international" class="charity-logo"  width="150" height="60" />
+                        
+                        <a href="#na" class="charity-open">Why CARE international?</a>
+                        <div class="charity-tooltip">
+                            <span class="arrow"></span>
+                            <p><a href="http://www.careinternational.org.uk/">CARE International</a> fights poverty and injustice in over 80 countries around the world to help the world's poorest people find routes out of poverty.</p>
+                        </div>
+                        
+                    </div>
+                    
+                    <a class="btn donate"><span class="inner">Donate now</span></a>
+                </div>
+                <a class="next" href="#na">Keep scrolling</a>
+            </div>
+        </div>
+    </section>
+    <section data-view="CalendarPanelView" id="panel-3" class=" panel panel-3 calendar-panel">
+        <div class="wrapper">
+            <div class="panel-inner">
+                <div class="calendar">
+                    <h3><strong class="num counter"></strong><span class="word plural-year">years</span></h3>
+                </div>
+                <p>You earn <strong><span class="lcu"></span><span class="txt-user-sallary"></span></strong> in <strong>1 year</strong>. It would take the average labourer in <span class="txt-counterpart-location">the developing world</span> <strong><span class="txt-counterpart-years"></span> <span class="plural-year">years</span></strong> to earn the same amount.</p>
+                <a class="next" href="#na">Keep scrolling</a>
+            </div>
+        </div>
+    </section>
+    <section data-view="CokePanelView" id="panel-4" class=" panel panel-4 cola-panel">
+        <div class="wrapper">
+            <div class="panel-inner">
+                <div class="cola-wrapper">
+                    <canvas id="canvas-cola" width="600" height="300"></canvas>
+                    <div class="cola-titles">
+                        <h5>
+                            <span class="user-cola-title">You</span>
+                            <span class="cola-time"><strong class="counter num-domestic-time"></strong></span>
+                        </h5>
+                        <h5>
+                            <span class="counterpart-cola-title">Labourer in <span class="txt-counterpart-location"></span></span>
+                            <span class="cola-time"><strong class="counter num-counterpart-time"></strong></span>
+                        </h5>
+                    </div>
+                </div>
+                <p>Thirsty? It’ll only take you <strong class="txt-domestic-coke-time"></strong> to earn enough for a refreshing can of cola. If the average labourer in <span class="txt-counterpart-location"></span> fancies one, they’ll have to work for around <strong><span class="txt-counterpart-coke-time"></span></strong> for it.</p>
+                <p class="sharing">Share your results: <br /><a href="#" class="facebook">Facebook</a> <a href="#" class="twitter">Twitter</a> <a href="#" class="googleplus">Google+</a> <a href="#" class="tumblr">Tumblr</a></p>
+                <a class="next" href="#na">Keep scrolling</a>
+            </div>
+        </div>
+    </section>
+    
+    <section data-view="DoctorPanelView" id="panel-5" class=" panel panel-5 doctor-panel">
+        <div class="wrapper">
+            <div class="panel-inner">
+                <div class="doctor">
+                    <h3><strong class="num counter"></strong> <span class="word plural-doctor">doctor</span></h3>
+                </div>
+                <p class="doctor-txt">Your monthly income could pay the monthly salaries of <strong><span class="txt-equivalent-number"></span> <span class="plural-doctor">doctor</span></strong> in <span class="txt-counterpart-location"></span>.</p>
+                <p class="sharing">Share your results: <br /><a href="#" class="facebook">Facebook</a> <a href="#" class="twitter">Twitter</a> <a href="#" class="googleplus">Google+</a> <a href="#" class="tumblr">Tumblr</a></p>
+                <a class="next" href="#na">Keep scrolling</a>
+            </div>
+        </div>
+    </section>
+
+
+            <section data-view="Donate2PanelView" data-bottom-padding-offset="38" id="panel-6" class=" panel panel-6 donate-panel">
+                <div class="wrapper">
+                    <div class="panel-inner">
+                        <div class="coin"></div>
+                        <h2>Feeling a little richer?</h2>
+                        <p>Richer and ready to give some of your new found wealth to those who need it most? Support our chosen charity and feel a whole lot better for the rest of your day.</p>
+                        <p><a href="http://www.careinternational.org.uk/">CARE International</a> fights poverty and injustice in over 80 countries around the world to help the world's poorest people find routes out of poverty.</p>
+                        
+                       
+                     
+                    </div>
+           
+                </div>
+            </section>
+        </div>
+
+        <div class="footer-container">
+            <footer class="footer">
+               
+            </footer>
+        </div>
+        <img style="display:none;" itemprop="image" src="img/sharecoin.png" />
+       
+        
+       
+        
+		</div>
+	</div>
+	<div data-role="page" data-theme="a" id="introduction">
+	<div data-role="panel" id="panelpage2" data-theme="a">
+    <!-- panel content goes here -->
+	<div class="panel-content">
+      <div ><img src="img/logo3.png" style="width:100%;"/></div>
+      <ul data-role="listview">
+    <li><a href="#mainpage">mohasebegar</a></li>
+    <li><a href="#introduction">darbareye barname</a></li>
+    <li><a href="#">Video</a></li>
+   
+</ul>
+    </div><!-- /content wrapper for padding -->
+</div><!-- /panel -->
+		<div data-role="header" data-position="fixed" data-theme="a">
+		
+		<a href="#panelpage2" data-role="button" data-inline="true" data-icon="bars">Menu</a>
+	<h1>Edit Contact</h1>
+	
+
+		</div>
+		<div data-role="content" data-theme="a">
+		
+		</div>
+	</div>
+	</body>
+</html>
